@@ -1,0 +1,100 @@
+---
+title: "Replication of Study 'A New Set of Three-Dimensional Shapes for Investigating Mental Rotation Processes' by Ganis & Kievit (2015, Journal of Open Psychology Data)"
+author: "Fan Yang (fay006@ucsd.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+  pdf:
+    toc: true
+    toc_depth: 3
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+I chose to replicate Ganis and Kievit’s (2015) study because it uses computational methods to investigate mental rotation, aligning with my interests in spatial cognition and computational social science. The study identified a linear increase in response times and error rates with greater angular disparity, illustrating how cognitive load increases with the complexity of spatial transformations. This finding has practical implications for fields like architecture, where visualizing spatial relationships is essential. Replicating these results will allow me to explore how spatial transformations are processed mentally and how these processes impact real-world tasks that require strong spatial skills, while also helping me develop data collection and analysis skills relevant to spatial perception research.
+
+This experiment requires a set of 48 unique 3D mental rotation stimuli. Each stimulus pair consists of a baseline object at a 0-degree orientation and a target object rotated at one of three angles (50, 100, or 150 degrees). The pairs include “same” pairs, where the target can align with the baseline through mental rotation, and “different” pairs, where alignment is impossible due to structural differences. In each trial, participants view a pair of objects and must decide if they are identical by mentally rotating the target object. The trial sequence begins with a 250-millisecond blank screen, followed by the stimulus presentation. Participants have up to 7500 milliseconds to respond by pressing a key to indicate “same” or “different.” Each participant completes two blocks of 48 trials (96 trials total), with all rotation angles represented equally.
+
+The main challenges in replicating this experiment involve achieving precise timing and presentation of stimuli to capture reliable response times and reduce depth ambiguity through realistic shading and depth cues. Additionally, careful planning is required to ensure that the trial sequences are both randomized and counterbalanced, so that each rotation angle appears equally and in varied order to avoid any order effects. Effective management of repeated measures is also important to ensure each participant experiences all conditions consistently.
+
+- [GitHub Repository](https://github.com/ariafanyang/ganis2015)
+- [Original Paper](https://github.com/ariafanyang/ganis2015/blob/main/original_paper/Ganis%20%26%20Kievit%20(2015).pdf)
+
+## Methods
+
+### Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
+
+### Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+### Materials
+
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Procedure
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section. The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.
+
+**Clarify key analysis of interest here** You can also pre-specify additional analyses you plan to do.
+
+### Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+
+Any differences from what was described as the original plan, or “none”.
+
+## Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.
+
+*Side-by-side graph with original graph is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
